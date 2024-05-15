@@ -4,7 +4,7 @@ import { HeroSection } from "@/sections/hero-section"
 import { ProjectsSection } from "@/sections/projects-section"
 import { ServicesSection } from "@/sections/services-section"
 
-export default function LandingPage(): JSX.Element {
+export default function HomePage(): JSX.Element {
   return (
     <main className="size-full">
       <HeroSection />

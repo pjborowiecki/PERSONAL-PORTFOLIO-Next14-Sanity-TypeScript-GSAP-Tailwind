@@ -3,14 +3,12 @@
 import * as React from "react"
 import Link from "next/link"
 import { submitContactForm } from "@/actions/email"
+import { contactFormSchema, type ContactFormInput } from "@/validations/email"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 
-import { contactFormSchema, type ContactFormInput } from "@/validations/email"
-
 import { useToast } from "@/hooks/use-toast"
 import { cn } from "@/lib/utils"
-
 import { Button } from "@/components/ui/button"
 import {
   Form,

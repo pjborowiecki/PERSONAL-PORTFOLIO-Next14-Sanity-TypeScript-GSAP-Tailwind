@@ -1,9 +1,9 @@
 "use server"
 
 import { env } from "@/env.mjs"
-import { resend } from "@/config/email"
 import { contactFormSchema, type ContactFormInput } from "@/validations/email"
 
+import { resend } from "@/config/email"
 import { NewEnquiryEmail } from "@/components/emails/new-enquiry-email"
 
 export async function submitContactForm(

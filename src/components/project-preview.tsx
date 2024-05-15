@@ -7,7 +7,6 @@ import type { Project } from "@/types"
 import { motion } from "framer-motion"
 
 import { gsap, ScrollTrigger } from "@/config/gsap"
-
 import { useIsomorphicLayoutEffect } from "@/hooks/use-isomorphic-layout-effect"
 
 interface ProjectPreviewProps {

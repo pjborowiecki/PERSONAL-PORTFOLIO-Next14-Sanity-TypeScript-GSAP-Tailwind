@@ -3,8 +3,13 @@ import("./src/env.mjs")
 /** @type {import("next").NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  experimental: {
-    webpackBuildWorker: true,
+  rewrites() {
+    return [
+      {
+        source: "/admin",
+        destination: "/admin/index.html",
+      },
+    ]
   },
   images: {
     remotePatterns: [
